@@ -1,0 +1,33 @@
+.navbar a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: whitesmoke;
+    transition-duration: 0.2s;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+}
+.navbar a:hover{
+    transform: scale(1.12);
+    text-decoration:underline
+}
+#hello{
+    background: linear-gradient(to right,red,green,blue,yellow,orange,violet,white,red);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: 2.5s text_animation linear infinite;
+}
+@keyframes text_animation{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 200%;
+    }
+}
