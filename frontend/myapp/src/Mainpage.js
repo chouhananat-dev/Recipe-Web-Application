@@ -15,7 +15,7 @@ const Mainpage = () => {
     const getData=async(e)=>{
         // this function is called on button click and fetches the data
         // we will use here the Meal db api and fetch method to retrive the data
-        const response=await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${user_search}`)
+        const response=await fetch(`http://localhost:3000/api/recipe/${user_search}`)
         const jsonData=await response.json()
         setmydata(jsonData.meals)
     }
